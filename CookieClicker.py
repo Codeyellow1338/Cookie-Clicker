@@ -8,8 +8,9 @@ import time
 import random
 
 
-PATH = "C:\Program Files (x86)\chromedriver_win32\chromedriver.exe"
-driver = webdriver.Chrome(PATH)
+from webdriver_manager.microsoft import EdgeChromiumDriverManager
+
+driver = webdriver.Chrome(EdgeChromiumDriverManager().install())
 
 def cookie_clicker_thread():
     while True: 
