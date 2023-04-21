@@ -10,7 +10,7 @@ import random
 
 from webdriver_manager.microsoft import EdgeChromiumDriverManager
 
-driver = webdriver.Chrome(EdgeChromiumDriverManager().install())
+driver = webdriver.Edge(EdgeChromiumDriverManager().install())
 
 def cookie_clicker_thread():
     while True: 
